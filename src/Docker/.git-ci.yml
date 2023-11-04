@@ -1,0 +1,17 @@
+image:
+services:
+  - docker:24.0.6-dind
+
+stages:
+  - build
+  - deploy
+
+variables:
+
+before_script:
+
+pytorch:
+  stage: build
+  scripts:
+  tags:
+    - dind
